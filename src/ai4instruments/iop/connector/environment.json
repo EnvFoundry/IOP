@@ -23,6 +23,15 @@
   },
   "resources": [
     {
+      "kind": "getting-started",
+      "package_path": "skills/iop-lab/SKILL.md",
+      "title": "Connect a laboratory and begin an experiment",
+      "titles": {
+        "en": "Connect a laboratory and begin an experiment",
+        "zh-CN": "连接实验室并开始实验"
+      }
+    },
+    {
       "kind": "skills",
       "package_path": "skills/iop-lab",
       "title": "Agent experiment guidance",
