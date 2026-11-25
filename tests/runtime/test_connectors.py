@@ -30,7 +30,7 @@ class InstallCase(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temporary:
             result = connector.install(args(temporary, "--ssh", "bench"))
             root = Path(result["research_os"])
-            manifest = json.loads((root / "plugin.json").read_text())
+            manifest = json.loads((root / "plugin.json").read_text(encoding="utf-8"))
             self.assertEqual(manifest["display_name"], "IOP")
             self.assertIn("zh-CN", manifest["environment"]["presentation"])
             for resource in manifest["environment"]["resources"]:
