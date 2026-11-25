@@ -174,7 +174,9 @@ def files_for(name, profile):
     if references:
         server["env"] = references
     provided["aros/" + name + "/plugin.json"] = encoded(
-        dict(native, skills=["skills/iop-lab"], mcpServers={"lab": server})
+        dict(native, display_name="IOP", homepage="https://github.com/EnvFoundry/IOP",
+             environment=json.loads((HERE / "environment.json").read_text(encoding="utf-8")),
+             skills=["skills/iop-lab"], mcpServers={"lab": server})
     )
     provided["qiushi/" + name + "/manifest.json"] = encoded(
         dict(
