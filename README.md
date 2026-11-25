@@ -8,6 +8,8 @@ IOP combines a persistent Runtime, instrument descriptions, drivers, platform co
 
 The environment is independent of the agent host. People, Agentic Research OS, Codex, Claude Code, Qiushi Engine and other clients use the same registered instruments and saved experiments through the supported SDK, HTTP or MCP entry point.
 
+Host packages include [publisher-maintained descriptions and resource locations](src/ai4instruments/iop/connector/environment.json) in English and Chinese. The host resolves each `package_path` against the actual installed package; installation state, software locations and running tasks remain with their existing managers. Refreshing these descriptions does not install research software.
+
 ## Install and connect
 
 Install from source with Python 3.10 or newer:

@@ -9,7 +9,7 @@ PACKAGE = ROOT / "src/ai4instruments/iop/connector"
 
 
 def build(output):
-    names = ("__init__.py", "bridge.py", "shell.py")
+    names = ("__init__.py", "bridge.py", "shell.py", "environment.json")
     module = ast.parse((PACKAGE / "__init__.py").read_text(encoding="utf-8"))
     version = next(
         ast.literal_eval(node.value)

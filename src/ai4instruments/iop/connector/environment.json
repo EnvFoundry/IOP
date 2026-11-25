@@ -1,0 +1,62 @@
+{
+  "presentation": {
+    "en": {
+      "label": "Instruments & experiments",
+      "summary": "Connect instruments, acquisition and control programs. Deploy locally or connect an existing local or remote laboratory.",
+      "capabilities": [
+        "Instrument interfaces",
+        "Acquisition",
+        "Experiment programs",
+        "Lab connections"
+      ]
+    },
+    "zh-CN": {
+      "label": "真实仪器与实验",
+      "summary": "连接仪器、采集与控制程序，部署本机实验室或接入已有的本地及远程实验室。",
+      "capabilities": [
+        "仪器接口",
+        "数据采集",
+        "实验程序",
+        "实验室连接"
+      ]
+    }
+  },
+  "resources": [
+    {
+      "kind": "getting-started",
+      "package_path": "skills/iop-lab/SKILL.md",
+      "title": "Connect a laboratory and begin an experiment",
+      "titles": {
+        "en": "Connect a laboratory and begin an experiment",
+        "zh-CN": "连接实验室并开始实验"
+      }
+    },
+    {
+      "kind": "skills",
+      "package_path": "skills/iop-lab",
+      "title": "Agent experiment guidance",
+      "titles": {
+        "en": "Agent experiment guidance",
+        "zh-CN": "Agent 实验操作方法"
+      }
+    },
+    {
+      "kind": "guidance",
+      "package_path": "skills/iop-lab/references",
+      "title": "Instrument, platform and experiment guides",
+      "titles": {
+        "en": "Instrument, platform and experiment guides",
+        "zh-CN": "仪器、平台与实验指南"
+      }
+    },
+    {
+      "kind": "configuration",
+      "package_path": "plugin.json",
+      "title": "MCP / Plugin",
+      "titles": {
+        "en": "MCP / Plugin",
+        "zh-CN": "MCP 与插件配置"
+      }
+    }
+  ]
+}

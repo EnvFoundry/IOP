@@ -8,6 +8,8 @@ IOP 包含常驻 Runtime、仪器说明、驱动、实验平台配置、实验�
 
 IOP 独立于 Agent 宿主运行。人、Agentic Research OS、Codex、Claude Code、Qiushi Engine 等通过相应的 SDK、HTTP 或 MCP 入口使用同一套实验能力。
 
+宿主包附带[仓库维护的中英文说明与资源位置](src/ai4instruments/iop/connector/environment.json)。宿主将 `package_path` 对应到实际安装目录；安装状态、软件位置和运行中的任务继续由各自原有的管理服务负责。刷新这些说明不会安装科研软件。
+
 ## 安装与连接
 
 使用 Python 3.10 或更新版本从源码安装：

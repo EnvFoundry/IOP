@@ -26,6 +26,16 @@ def args(root, *argv):
 
 
 class InstallCase(unittest.TestCase):
+    def test_research_connector_exposes_publisher_resources_at_its_own_location(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            result = connector.install(args(temporary, "--ssh", "bench"))
+            root = Path(result["research_os"])
+            manifest = json.loads((root / "plugin.json").read_text(encoding="utf-8"))
+            self.assertEqual(manifest["display_name"], "IOP")
+            self.assertIn("zh-CN", manifest["environment"]["presentation"])
+            for resource in manifest["environment"]["resources"]:
+                self.assertTrue((root / resource["package_path"]).exists(), resource)
+
     def test_reinstall_pins_lab_and_preserves_previous_revision(self):
         with tempfile.TemporaryDirectory(prefix="IOP connector ") as d:
             root = Path(d)
