@@ -26,3 +26,4 @@ agent = ["mcp>=1.30,<2; python_version < '3.11'", "mcp>=2.3,<3; python_version >
 
 [tool.setuptools.package-data]
 "ai4instruments.iop" = ["reader.html", "desktop.runtimeconfig.json", "ui/*", "bin/*", "schema/*.json", "instruments/*.json"]
+"ai4instruments.iop.connector" = ["environment.json"]
