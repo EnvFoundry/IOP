@@ -29,7 +29,8 @@
       "titles": {
         "en": "Connect a laboratory and begin an experiment",
         "zh-CN": "连接实验室并开始实验"
-      }
+      },
+      "repository_path": "iop/connect/skills/iop-lab/SKILL.md"
     },
     {
       "kind": "skills",
@@ -38,7 +39,8 @@
       "titles": {
         "en": "Agent experiment guidance",
         "zh-CN": "Agent 实验操作方法"
-      }
+      },
+      "repository_path": "iop/connect/skills/iop-lab"
     },
     {
       "kind": "guidance",
@@ -47,7 +49,8 @@
       "titles": {
         "en": "Instrument, platform and experiment guides",
         "zh-CN": "仪器、平台与实验指南"
-      }
+      },
+      "repository_path": "iop/connect/skills/iop-lab/references"
     },
     {
       "kind": "configuration",
